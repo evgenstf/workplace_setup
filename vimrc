@@ -568,10 +568,9 @@ let g:airline_theme = 'minimalist'
 "YouCompleteMe
 Plugin 'Valloric/YouCompleteMe'
 map <C-]> :YcmCompleter GoToImprecise<CR>
-let g:ycm_global_ycm_extra_conf = "let g:ycm_global_ycm_extra_conf = ~/.vim/bundle/YouCompleteMe/third_party/ycmd/examples/.ycm_extra_conf.py"
-"let g:ycm_confirm_extra_conf = 0
 let g:ycm_collect_identifiers_from_tags_files = 1
 set tags+=./.tags
+let g:ycm_global_ycm_extra_conf = "~/.ycm_extra_conf.py"
 
 call vundle#end()
 
@@ -580,4 +579,3 @@ nmap t :Files<CR>
 "nmap <Leader>r :Tags<CR>
 "
 set colorcolumn=100
-let g:ycm_global_ycm_extra_conf = "~/.ycm_extra_conf.py"

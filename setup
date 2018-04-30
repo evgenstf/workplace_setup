@@ -11,6 +11,10 @@ cp vimrc ~/.vimrc
 export EDITOR=vim
 echo ~~~ OK ~~~
 
+echo ~~~ install cmake ~~~
+sudo apt -y install cmake
+echo ~~~ OK ~~~
+
 echo ~~~ install git ~~~
 sudo apt -y install git
 echo ~~~ copy gitconfig ~~~
