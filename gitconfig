@@ -1,0 +1,9 @@
+[alias]
+	st = status
+	co = checkout
+  cm = commit
+[user]
+	email = evgenii.kazakov@aimtech.com
+	name = Evgenii Kazakov
+[push]
+	default = simple
