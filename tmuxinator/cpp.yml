@@ -1,7 +1,7 @@
-# ~/.tmuxinator/dev.yml
+# ~/.tmuxinator/cpp.yml
 
-name: nuc
-root: ~/work
+name: cpp
+root: ~/
 
 # Optional tmux socket
 # socket_name: foo
@@ -32,8 +32,8 @@ windows:
       layout: d333,211x66,0,0{115x66,0,0,3,95x66,116,0[95x47,116,0,6,95x18,116,48,7]}
       panes:
         - vim
-        -
-        -
+        - vim
+        - vim
   - python: python3
   - dev: 
   - other:

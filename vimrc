@@ -396,11 +396,6 @@ command! BufCloseOthers %bd|e#
 " PLUGIN SETTINGS
 " ----------------------------------------------------------------------------
 
-" Use Pathogen for plugin management. See update.sh in this directory.
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-call pathogen#infect()
-call pathogen#helptags()
-
 " For any plugins that use this, make their keymappings use comma
 let mapleader = ","
 let maplocalleader = ","
