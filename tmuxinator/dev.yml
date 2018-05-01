@@ -1,6 +1,6 @@
-# ~/.tmuxinator/cpp.yml
+# ~/.tmuxinator/dev.yml
 
-name: cpp
+name: dev
 root: ~/
 
 # Optional tmux socket
