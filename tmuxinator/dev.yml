@@ -35,5 +35,5 @@ windows:
         - vim
         - vim
   - python: python3
-  - dev: 
+  - ssh: 
   - other:

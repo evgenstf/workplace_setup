@@ -11,6 +11,10 @@ cp vimrc ~/.vimrc
 export EDITOR=vim
 echo ~~~ OK ~~~
 
+echo ~~~ install python3 ~~~
+sudo apt -y install python3
+echo ~~~ OK ~~~
+
 echo ~~~ install gcc ~~~
 sudo apt -y install gcc
 echo ~~~ OK ~~~
