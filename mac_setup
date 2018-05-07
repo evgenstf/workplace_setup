@@ -25,6 +25,8 @@ echo ~~~ OK ~~~
 
 echo ~~~ install git ~~~
 brew install git
+echo ~~~ install tig ~~~
+brew install tig
 echo ~~~ copy gitconfig ~~~
 cp gitconfig ~/.gitconfig
 echo ~~~ OK ~~~

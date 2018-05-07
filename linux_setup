@@ -25,6 +25,8 @@ echo ~~~ OK ~~~
 
 echo ~~~ install git ~~~
 sudo apt -y install git
+echo ~~~ install tig ~~~
+sudo apt -y install tig
 echo ~~~ copy gitconfig ~~~
 cp gitconfig ~/.gitconfig
 echo ~~~ OK ~~~
