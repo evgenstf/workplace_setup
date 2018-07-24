@@ -578,3 +578,4 @@ nmap t :Files<CR>
 "nmap <Leader>r :Tags<CR>
 "
 set colorcolumn=100
+colorscheme iceberg

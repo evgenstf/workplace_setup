@@ -8,6 +8,8 @@ echo ~~~ clone Vundle ~~~
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/Vundle.vim
 echo ~~~ copy vimrc ~~~
 cp vimrc ~/.vimrc
+echo ~~~ copy colorscheme ~~~
+cp colors ~/.vim -r
 export EDITOR=vim
 echo ~~~ OK ~~~
 
