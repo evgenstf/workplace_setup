@@ -559,6 +559,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
+Plugin 'fatih/vim-go'
 
 
 let g:EasyMotion_leader_key = '\'
@@ -568,8 +569,9 @@ let g:airline_theme = 'minimalist'
 Plugin 'Valloric/YouCompleteMe'
 map <C-]> :YcmCompleter GoToImprecise<CR>
 let g:ycm_collect_identifiers_from_tags_files = 1
+let g:ycm_confirm_extra_conf = 0
 set tags+=./.tags
-let g:ycm_global_ycm_extra_conf = "~/.ycm_extra_conf.py"
+"let g:ycm_global_ycm_extra_conf = ~/.ycm_extra_conf.py
 
 call vundle#end()
 
@@ -579,3 +581,5 @@ nmap t :Files<CR>
 "
 set colorcolumn=100
 colorscheme iceberg
+
+let g:go_version_warning = 0
