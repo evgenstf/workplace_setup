@@ -2,6 +2,10 @@
 
 echo ~~~ setting up workplace ~~~
 
+echo ~~~ upgrade bashrc ~~~
+echo "PROMPT_DIRTRIM=2" >> ~/.bashrc
+echo ~~~ OK ~~~
+
 echo ~~~ install vim ~~~
 sudo apt -y install vim
 echo ~~~ clone Vundle ~~~
@@ -42,5 +46,6 @@ sudo apt -y install tmuxinator
 mkdir ~/.tmuxinator
 cp -r tmuxinator/* ~/.tmuxinator/
 echo ~~~ OK ~~~
+
 
 echo ~~~ all what you need successfully installed ~~~
