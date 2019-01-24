@@ -28,12 +28,22 @@ root: ~/
 # post: tmux -CC attach -t dev
 
 windows:
-  - main:
-      layout: d333,211x66,0,0{115x66,0,0,3,95x66,116,0[95x47,116,0,6,95x18,116,48,7]}
+  - latte:
+      layout: 765b,272x69,0,0{141x69,0,0,0,130x69,142,0,11}
       panes:
-        - vim
-        - vim
-        - vim
-  - python: python3
-  - ssh: 
-  - other:
+        - #
+        - #
+  - cappuccino:
+      layout: 599d,272x69,0,0[272x34,0,0{131x34,0,0,2,140x34,132,0,14},272x34,0,35{131x34,0,35,12,140x34,132,35,13}]
+      panes:
+        - PROMPT_DIRTRIM=2
+        - PROMPT_DIRTRIM=2
+        - PROMPT_DIRTRIM=2
+        - PROMPT_DIRTRIM=2
+  - espresso:
+      layout: 9f90,272x69,0,0{90x69,0,0,6,90x69,91,0,10,90x69,182,0,9}
+      panes:
+        - PROMPT_DIRTRIM=3
+        - PROMPT_DIRTRIM=3
+        - PROMPT_DIRTRIM=3
+      

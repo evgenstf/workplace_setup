@@ -3,7 +3,7 @@
 echo ~~~ setting up workplace ~~~
 
 echo ~~~ upgrade bashrc ~~~
-echo "PROMPT_DIRTRIM=2" >> ~/.bashrc
+tput cup $(tput lines) 0
 echo ~~~ OK ~~~
 
 echo ~~~ install vim ~~~
