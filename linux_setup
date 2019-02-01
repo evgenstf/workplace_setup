@@ -4,6 +4,7 @@ echo ~~~ setting up workplace ~~~
 
 echo ~~~ upgrade bashrc ~~~
 echo "tput cup $(tput lines) 0" >> ~/.bashrc
+echo "force_color_prompt=yes" >> ~/.bashrc
 echo ~~~ OK ~~~
 
 echo ~~~ install vim ~~~
