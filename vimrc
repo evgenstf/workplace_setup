@@ -542,8 +542,7 @@ let g:ycm_global_ycm_extra_conf = "~/.ycm_extra_conf.py"
 noremap <Up> <NOP>
 noremap <Down> <NOP>
 noremap <Left> <NOP>
-noremap <Right> <NOP>
-
+noremap <Right> <NOP> 
 
 
 set rtp+=~/.vim/bundle/Vundle.vim/
@@ -560,9 +559,10 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 Plugin 'fatih/vim-go'
+Plugin 'nerdcommenter'
+Plugin 'a.vim'
 
-
-let g:EasyMotion_leader_key = '\'
+let g:EasyMotion_leader_key = ';'
 let g:airline_theme = 'minimalist'
 
 "YouCompleteMe
@@ -583,3 +583,6 @@ set colorcolumn=100
 colorscheme iceberg
 
 let g:go_version_warning = 0
+map <C-z> :AV <CR>
+
+set splitright
