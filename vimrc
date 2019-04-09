@@ -586,3 +586,4 @@ let g:go_version_warning = 0
 map <C-z> :AV <CR>
 
 set splitright
+set relativenumber
