@@ -262,7 +262,6 @@ endfunction
 
 " These are things that I mistype and want ignored.
 nmap Q  <silent>
-nmap q: <silent>
 nmap K  <silent>
 
 " Make the cursor stay on the same line when window switching
@@ -366,7 +365,6 @@ set smartcase               " Lets you search for ALL CAPS
 set softtabstop=2           " Spaces 'feel' like tabs
 set suffixes+=.pyc          " Ignore these files when tab-completing
 set tabstop=2               " The One True Tab
-set textwidth=100           " 100 is the new 80
 set thesaurus+=~/.vim/mthes10/mthesaur.txt
 set notitle                 " Don't set the title of the Vim window
 set wildmenu                " Show possible completions on command line
@@ -586,4 +584,5 @@ let g:go_version_warning = 0
 map <C-z> :AV <CR>
 
 set splitright
-set formatoptions-=tc
+
+set cino=N-s,g0,+2s,l-s,m1
