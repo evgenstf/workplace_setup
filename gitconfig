@@ -3,7 +3,7 @@
 	co = checkout
   cm = commit
 [user]
-	email = evgenii.kazakov@aimtech.com
+	email = evgenstf@gmail.com
 	name = Evgenii Kazakov
 [push]
 	default = simple
