@@ -1,6 +1,8 @@
 alias mk="~/scripts/./make_default.sh && cd build"
 alias mkt="~/scripts/./make_tests.sh && cd build"
 alias fuck='eval $(thefuck $(fc -ln -1)); history -r'
+alias mux=tmuxinator
+
 tput cup $(tput lines) 0
 force_color_prompt=yes
 
