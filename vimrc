@@ -146,7 +146,7 @@ endif
 " Some plugin seems to search for something at startup, so this fixes that.
 "silent! nohlsearch
 
-" vim:set tw=100: 
+" vim:set tw=100:
 
 let mapleader = ','
 
@@ -498,7 +498,7 @@ let g:ycm_global_ycm_extra_conf = "~/.ycm_extra_conf.py"
 noremap <Up> <NOP>
 noremap <Down> <NOP>
 noremap <Left> <NOP>
-noremap <Right> <NOP> 
+noremap <Right> <NOP>
 
 
 set rtp+=~/.vim/bundle/Vundle.vim/
@@ -542,3 +542,7 @@ map <C-z> :AV <CR>
 set splitright
 
 set cino=N-s,g0,+2s,l-s,m1
+
+autocmd BufWritePre * %s/\s\+$//e
+
+set completeopt-=preview
