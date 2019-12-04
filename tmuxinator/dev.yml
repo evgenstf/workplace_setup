@@ -28,22 +28,34 @@ root: ~/
 # post: tmux -CC attach -t dev
 
 windows:
-  - latte:
+  - ma:
       layout: 765b,272x69,0,0{141x69,0,0,0,130x69,142,0,11}
       panes:
-        - #
-        - #
-  - cappuccino:
-      layout: 599d,272x69,0,0[272x34,0,0{131x34,0,0,2,140x34,132,0,14},272x34,0,35{131x34,0,35,12,140x34,132,35,13}]
-      panes:
-        - PROMPT_DIRTRIM=2
-        - PROMPT_DIRTRIM=2
-        - PROMPT_DIRTRIM=2
-        - PROMPT_DIRTRIM=2
-  - espresso:
+        - source ~/.bashrc
+        - source ~/.bashrc
+  - so:
       layout: 9f90,272x69,0,0{90x69,0,0,6,90x69,91,0,10,90x69,182,0,9}
       panes:
-        - PROMPT_DIRTRIM=3
-        - PROMPT_DIRTRIM=3
-        - PROMPT_DIRTRIM=3
-      
+        - source ~/.bashrc
+        - source ~/.bashrc
+        - source ~/.bashrc
+  - na:
+      layout: 765b,272x69,0,0{141x69,0,0,0,130x69,142,0,11}
+      panes:
+        - source ~/.bashrc
+        - source ~/.bashrc
+  - da:
+      layout: 765b,272x69,0,0{141x69,0,0,0,130x69,142,0,11}
+      panes:
+        - source ~/.bashrc
+        - source ~/.bashrc
+  - le:
+      layout: 765b,272x69,0,0{141x69,0,0,0,130x69,142,0,11}
+      panes:
+        - source ~/.bashrc
+        - source ~/.bashrc
+  - ju:
+      layout: 765b,272x69,0,0{141x69,0,0,0,130x69,142,0,11}
+      panes:
+        - source ~/.bashrc
+        - source ~/.bashrc
