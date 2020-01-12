@@ -11,3 +11,5 @@ export VISUAL='vim'
 export CC=/usr/bin/clang
 export CXX=/usr/bin/clang++
 
+mux start dev
+HISTTIMEFORMAT="%d/%m/%y %T "
