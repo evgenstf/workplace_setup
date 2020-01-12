@@ -51,5 +51,9 @@ echo ~~~ install thefuck ~~~
 sudo -H pip install thefuck
 echo ~~~ OK ~~~
 
+echo ~~~ install tree ~~~
+sudo apt -y install tree
+echo ~~~ OK ~~~
+
 
 echo ~~~ all what you need successfully installed ~~~
