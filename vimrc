@@ -525,7 +525,6 @@ map <C-]> :YcmCompleter GoToImprecise<CR>
 let g:ycm_collect_identifiers_from_tags_files = 1
 let g:ycm_confirm_extra_conf = 0
 set tags+=./.tags
-"let g:ycm_global_ycm_extra_conf = ~/.ycm_extra_conf.py
 
 call vundle#end()
 
