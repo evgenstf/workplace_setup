@@ -521,11 +521,14 @@ let g:airline_theme = 'minimalist'
 
 "YouCompleteMe
 Plugin 'Valloric/YouCompleteMe'
-map <C-]> :YcmCompleter GoToImprecise<CR>
+
+map <C-i> :YcmCompleter GoToInclude<CR>
+map <C-n> :YcmCompleter GoToDeclaration<CR>
+map <C-m> :YcmCompleter GoToImprecise<CR>
+
 let g:ycm_collect_identifiers_from_tags_files = 1
 let g:ycm_confirm_extra_conf = 0
 set tags+=./.tags
-"let g:ycm_global_ycm_extra_conf = ~/.ycm_extra_conf.py
 
 call vundle#end()
 
