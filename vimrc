@@ -544,8 +544,15 @@ map <C-z> :AV <CR>
 
 set splitright
 
-set cino=N-s,g0,+2s,l-s,m1
+set cino=N-s,g0,+2s,l-s,m1,(4
 
+function! Formatonsave()
+  let l:formatdiff = 1
+  py3 import sys
+  py3 sys.argv = ["-style=~/.clang-format"]
+  py3f /usr/share/vim/addons/syntax/clang-format-6.0.py
+endfunction
+autocmd BufWritePre *.h,*.cc,*.cpp call Formatonsave()
 autocmd BufWritePre * %s/\s\+$//e
 
 set completeopt-=preview
