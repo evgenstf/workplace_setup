@@ -20,6 +20,18 @@ echo ~~~ set vim as global editor ~~~
 export EDITOR=vim
 echo ~~~ OK ~~~
 
+echo ~~~ install clang-9 ~~~
+curl -SL http://releases.llvm.org/9.0.0/clang%2bllvm-9.0.0-x86_64-linux-gnu-ubuntu-16.04.tar.xz | tar -xJC .
+mv clang+llvm-9.0.0-x86_64-linux-gnu-ubuntu-18.04 clang_9.0.0
+sudo mv clang_9.0.0 /usr/local
+echo ~~~ OK ~~~
+
+echo ~~~ setup clang-format ~~~
+sudo apt -y install clang-format
+cp clang-format.py ~/.vim/
+cp clang-format.conf ~/.clang-format
+echo ~~~ OK ~~~
+
 echo ~~~ install python3 ~~~
 sudo apt -y install python3
 echo ~~~ OK ~~~
