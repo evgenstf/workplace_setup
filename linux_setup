@@ -6,6 +6,10 @@ echo ~~~ upgrade bashrc ~~~
 cat bashrc >> ~/.bashrc
 echo ~~~ OK ~~~
 
+echo ~~~ install pip ~~~
+sudo apt -y install python-pip
+echo ~~~ OK ~~~
+
 echo ~~~ install vim ~~~
 sudo apt -y install vim
 echo ~~~ clone Vundle ~~~
