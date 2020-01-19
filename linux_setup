@@ -63,7 +63,7 @@ cp -r tmuxinator/* ~/.tmuxinator/
 echo ~~~ OK ~~~
 
 echo ~~~ install thefuck ~~~
-sudo -H pip install thefuck
+sudo apt -y install thefuck
 echo ~~~ OK ~~~
 
 echo ~~~ install tree ~~~
