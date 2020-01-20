@@ -513,7 +513,6 @@ Plugin 'EasyMotion'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'fatih/vim-go'
-Plugin 'nerdcommenter'
 Plugin 'a.vim'
 
 let g:EasyMotion_leader_key = ';'
@@ -521,6 +520,8 @@ let g:airline_theme = 'minimalist'
 
 "YouCompleteMe
 Plugin 'Valloric/YouCompleteMe'
+
+Plugin 'rhysd/vim-clang-format'
 
 map <C-i> :YcmCompleter GoToInclude<CR>
 map <C-n> :YcmCompleter GoToDeclaration<CR>
@@ -546,13 +547,9 @@ set splitright
 
 set cino=N-s,g0,+2s,l-s,m1,(4
 
-function! Formatonsave()
-  let l:formatdiff = 1
-  py3 import sys
-  py3 sys.argv = ["-style=~/.clang-format"]
-  py3f /usr/share/vim/addons/syntax/clang-format-6.0.py
-endfunction
-autocmd BufWritePre *.h,*.cc,*.cpp call Formatonsave()
+autocmd FileType c,cpp,objc nnoremap <buffer>= :<C-u>ClangFormat<CR>
+autocmd FileType c,cpp,objc vnoremap <buffer>= :ClangFormat<CR>
+
 autocmd BufWritePre * %s/\s\+$//e
 
 set completeopt-=preview
