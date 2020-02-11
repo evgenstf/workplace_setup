@@ -513,7 +513,6 @@ Plugin 'EasyMotion'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'fatih/vim-go'
-Plugin 'nerdcommenter'
 Plugin 'a.vim'
 
 let g:EasyMotion_leader_key = ';'
