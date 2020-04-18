@@ -34,9 +34,8 @@ windows:
         - source ~/.bashrc
         - source ~/.bashrc
   - so:
-      layout: 9f90,272x69,0,0{90x69,0,0,6,90x69,91,0,10,90x69,182,0,9}
+      layout: 765b,272x69,0,0{141x69,0,0,0,130x69,142,0,11}
       panes:
-        - source ~/.bashrc
         - source ~/.bashrc
         - source ~/.bashrc
   - na:
