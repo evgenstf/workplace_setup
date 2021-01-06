@@ -17,3 +17,4 @@ HISTTIMEFORMAT="%d/%m/%y %T "
 export PATH=/usr/local/clang_9.0.0/bin:$PATH
 export LD_LIBRARY_PATH=/usr/local/clang_9.0.0/lib:$LD_LIBRARY_PATH
 
+export PS1='\u:\w 8==o '
