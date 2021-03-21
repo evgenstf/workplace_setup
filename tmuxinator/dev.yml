@@ -73,4 +73,8 @@ windows:
       panes:
         - source ~/.bashrc
         - source ~/.bashrc
-
+  - la:
+      layout: 765b,272x69,0,0{141x69,0,0,0,130x69,142,0,11}
+      panes:
+        - source ~/.bashrc
+        - source ~/.bashrc
