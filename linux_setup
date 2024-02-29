@@ -16,8 +16,8 @@ echo ~~~ clone Vundle ~~~
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/Vundle.vim
 echo ~~~ copy vimrc ~~~
 cp vimrc ~/.vimrc
-echo ~~~ copy colorscheme ~~~
-cp colors ~/.vim -r
+echo ~~~ copy vim configuration ~~~
+cp -r vim/* ~/.vim/
 echo ~~~ copy ycm_extra_conf ~~~
 cp ycm_extra_conf.py ~/.ycm_extra_conf.py
 echo ~~~ set vim as global editor ~~~
