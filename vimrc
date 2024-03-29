@@ -553,3 +553,9 @@ autocmd FileType c,cpp,objc vnoremap <buffer>= :ClangFormat<CR>
 autocmd BufWritePre * %s/\s\+$//e
 
 set completeopt-=preview
+
+set undodir=~/.vim/undodir
+set undofile
+set undolevels=1000
+set undoreload=10000
+
