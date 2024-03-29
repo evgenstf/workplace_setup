@@ -224,7 +224,10 @@ vnoremap <space> zf
 nmap <C-j> <C-W>j
 nmap <C-k> <C-W>k
 nmap <C-h> <C-W>h
-nmap <C-l> <C-W>l
+nmap <C-l> <C-W>
+
+
+nmap <C-s> :MundoToggle<CR>
 
 " Resize panes when window/terminal gets resize
 autocmd VimResized * :wincmd =
@@ -514,6 +517,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'fatih/vim-go'
 Plugin 'a.vim'
+Plugin 'rust-lang/rust.vim'
 
 let g:EasyMotion_leader_key = ';'
 let g:airline_theme = 'minimalist'
@@ -522,6 +526,9 @@ let g:airline_theme = 'minimalist'
 Plugin 'Valloric/YouCompleteMe'
 
 Plugin 'rhysd/vim-clang-format'
+
+Plugin 'simnalamburt/vim-mundo'
+
 
 map <C-i> :YcmCompleter GoToInclude<CR>
 map <C-n> :YcmCompleter GoToDeclaration<CR>
@@ -553,6 +560,11 @@ autocmd FileType c,cpp,objc vnoremap <buffer>= :ClangFormat<CR>
 autocmd BufWritePre * %s/\s\+$//e
 
 set completeopt-=preview
+
+syntax enable
+filetype plugin indent on
+
+let g:rustfmt_autosave = 1
 
 set undodir=~/.vim/undodir
 set undofile
