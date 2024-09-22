@@ -1,0 +1,21 @@
+#!/bin/sh
+# Pre-commit hook to strip output from Jupyter notebooks
+
+# Get a list of all staged .ipynb files
+STAGED_FILES=$(git diff --cached --name-only --diff-filter=ACM | grep '\.ipynb$')
+
+echo "Strip ipynb files: $STAGED_FILES"
+
+if [ -n "$STAGED_FILES" ]; then
+  # Loop through each staged .ipynb file and strip output
+  for FILE in $STAGED_FILES; do
+    echo "Stripping output from $FILE"
+    nbstripout "$FILE"
+    # Re-add the modified file to the staging area
+    git add "$FILE"
+  done
+fi
+
+# Exit with 0 to allow the commit
+exit 0
+
